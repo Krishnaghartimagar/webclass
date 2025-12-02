@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 0;
+            overflow: hidden;
+            white-space: pre;
+            animation: typing 2s infinite linear;
+        }
+        @keyframes typing {
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 400px;
+            }
+            
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            border: 30px solid black;
+            border-radius: 50%;
+            border-color: black transparent;
+            animation: aa 2s infinite linear;
+        }
+        @keyframes aa {
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+        .ripple{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            margin: 40px;
+        }
+        .ripple::before,.ripple::after{
+            content: '';
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .ripple::before{
+            animation: ripple 2s infinite ;
+        }
+        .ripple::after{
+            animation: ripple 2s infinite 1s;
+        }
+        @keyframes ripple {
+            0%{
+                opacity: 1;
+                transform: scale(1);
+            }
+            100%{
+                opacity: 0;
+                transform: scale(1.5);
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Practices time of todays class</h1>
+    <br>
+    <div class="circle"></div>
+    <br>
+    <div class="ripple"></div>
+</body>
+</html>
