@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1400px;
+    margin: auto; 
+    /* border: 5px solid black; */
+}
+.top {
+
+    width: 100%;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: white;
+    flex-direction: column;
+}
+
+.top img {
+    height: 50px; 
+}
+.header{
+    border-bottom: 1px solid rgb(48, 47, 47);
+}
+ul{
+    list-style: none;
+}
+.a{
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+}
+.ai{
+    align-items: center;
+}
+
+.l{
+    line-height: normal;
+}
+li ul{
+    display: none;
+}
+ul li:hover .l{
+    display: block;
+}
+.p{
+    padding: 15px;
+}
+.b{
+    border: 1px solid rgb(50, 49, 49);
+    /* margin: 40px 40px;
+    padding: 30px 15px; */
+}
+.top img{
+    width:700px;
+    height: auto;
+    margin: 5px;
+}
+.to{
+    width: 100%;
+    /* padding: 20px; */
+    
+    align-items: center;
+    margin: auto;
+    background: white;
+}
+.p1{
+padding: 20px 20px;
+}
+.o ul{ margin: 80px; list-style: none;}
+        .o li{ position: relative ; border-bottom: 2px solid #999; padding-bottom: 10px;}
+        .o li::before{ content: ''; width: 10px; height: 10px;  border: 1px solid #000; border-radius: 50%; position: absolute; left: -18px; top: 0; background: #fff; z-index: 999;}
+        .o li::after{ content: ''; width: 2px; height: 100%; background: #000; position: absolute; left: -15px; top: 0;}
+        .o li:first-child::before{ background: black;}
+        .cc img{
+            width: 300px;
+
+        }
+        .p2{
+            margin: 40px 40px;
+            padding: 20px 20px;
+            line-height: 40px;
+        }
+        .g{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .gap{
+            gap: 40px;
+        }
+        .co{
+            background-color: rgb(70, 42, 42);
+        }
+        .f{
+            border: 1px solid rgb(215, 214, 214);
+            padding: 40px 40px 40px 40px;
+            margin: 20px 20px;
+        }
+        
+
